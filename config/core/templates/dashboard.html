@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to your dashoard</h1>
+<p>Hello {{user.username}}</p>
+<p><a href="{% url 'logout' %}">Logout</a></p>
+{% endblock %}
