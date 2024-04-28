@@ -92,5 +92,8 @@ class WorkspaceDispatchBoard(TemplateView):
 class WorkspaceVehicles(TemplateView):
     template_name = 'vehicle_management.html'
 
+class WorkspaceVehicleProfile(DetailView):
+    template_name = 'vehicle_profile.html'
+
 class WorkspaceDrivers(TemplateView):
     template_name = 'drivers.html'

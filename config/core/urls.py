@@ -17,5 +17,6 @@ urlpatterns = [
     path('', views.HomePageView.as_view(), name='workspace'),
     path('workspace/dispatch-board/', views.WorkspaceDispatchBoard.as_view(), name='dispatch-board'),
     path('workspace/vehicle-management/', views.WorkspaceVehicles.as_view(), name='vehicles'),
+    path('workspace/vehicle-profile/<int:pk>/', views.WorkspaceVehicleProfile.as_view(), name='vehicle-profile'),
     path('workspace/drivers/', views.WorkspaceDrivers.as_view(), name='drivers'),
 ]
