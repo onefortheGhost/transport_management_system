@@ -4,8 +4,6 @@ from django.shortcuts import get_object_or_404
 from .models import Vehicle
 from .serializers import VehicleSerializer, VehicleFuelRecordSerializer, VehicleInsuranceSerializer, VehicleMaintenanceSerializer, VehicleInspectionSerializer
 
-# Create your views here.
-
 #   API Views
 class VehicleViewSet(viewsets.ModelViewSet):
     queryset = Vehicle.objects.all()

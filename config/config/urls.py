@@ -29,6 +29,7 @@ urlpatterns = [
     path('', include('core.urls')),
     path('api/v1/', include('core.urls', namespace='api')),
     path('api/v1/vehicles/', include('vehicles.urls')),
+    path('api/v1/drivers/', include('drivers.urls')),
 ]
 
 if settings.DEBUG:
