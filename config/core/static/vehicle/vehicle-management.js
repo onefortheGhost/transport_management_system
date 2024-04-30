@@ -6,7 +6,7 @@ $(document).ready(function() {
             var vehicleArea = $('#vehicle-area');
             data.forEach(function(vehicle) {
                 vehicleArea.append(`
-                    <div class="card mb-3">
+                    <div class="card mb-3"> <!-- Vehicle Card -->
                         <div class="card-body d-flex justify-content-between align-items-center">
                             <div class="flex-grow-1">
                                 <h5 class="card-title">${vehicle.make} ${vehicle.model}</h5>
