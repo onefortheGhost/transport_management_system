@@ -4,8 +4,8 @@ from . import views
 
 router = DefaultRouter()
 
-router.register(r'', views.DispatchBoardViewSet, basename='dispatch-board'),
-router.register(r'(?P<dispatch_id>\d+)/', views.DispatchBoardViewSet, basename='dispatch'),
+router.register(r'', views.DispatchDatabaseViewSet, basename='dispatch-database'),
+router.register(r'(?P<dispatch_id>\d+)/', views.DispatchDatabaseViewSet, basename='dispatch'),
 
 urlpatterns = [
     path('', include(router.urls)),

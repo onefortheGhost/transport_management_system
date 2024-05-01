@@ -97,3 +97,6 @@ class WorkspaceVehicleProfile(DetailView):
 
 class WorkspaceDrivers(TemplateView):
     template_name = 'driver_management.html'
+
+class WorkspaceDriverProfile(DetailView):
+    template_name = 'driver_profile.html'

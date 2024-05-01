@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'vehicles',
     'drivers',
+    'dispatch_database',
 ]
 
 MIDDLEWARE = [

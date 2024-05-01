@@ -19,4 +19,5 @@ urlpatterns = [
     path('workspace/vehicle-management/', views.WorkspaceVehicles.as_view(), name='vehicles'),
     path('workspace/vehicle-profile/<int:pk>/', views.WorkspaceVehicleProfile.as_view(), name='vehicle-profile'),
     path('workspace/driver-management/', views.WorkspaceDrivers.as_view(), name='drivers'),
+    path('workspace/driver-profile/<int:pk>/', views.WorkspaceDriverProfile.as_view(), name='driver-profile'),
 ]
