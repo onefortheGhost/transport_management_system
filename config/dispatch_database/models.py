@@ -9,6 +9,12 @@ class Dispatch(models.Model):
     vehicle = models.ForeignKey('vehicles.Vehicle', related_name='dispatch', on_delete=models.CASCADE) #TODO - Verify that delete cascade is correct
     status = models.CharField(max_length=255, default='Pending')
 
+    # Vehicle Schedule Block
+    schedule_start_date = models.DateField()
+    schedule_start_time = models.TimeField()
+    schedule_end_date = models.DateField()
+    schedule_end_time = models.TimeField()
+
     # Pickup information
     pickup_date_start = models.DateField()
     pickup_date_end = models.DateField()
@@ -33,3 +39,12 @@ class Dispatch(models.Model):
 
     def __str__(self):
         return f'{self.driver} - {self.date} - {self.location}'
+    
+    def clean():
+        # Internal Schedule Validation
+        #TODO - Add validation to ensure that the schedule start date is before the schedule end date
+        #TODO - Add validation to ensure that the pickup date start is before the pickup date end
+        #TODO - Add validation to ensure that the dropoff date start is before the dropoff date end
+        #TODO - Add validation to ensure that the schedule start date is before the pickup date start
+        #TODO - Add validation to ensure that the schedule end date is after the dropoff date end
+        pass
